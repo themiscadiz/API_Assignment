@@ -5,11 +5,124 @@
         padding: 0 0 0 0;
         margin: 0;
         box-sizing: border-box;
+        text-align: center;
+       
       }
       html {
         font-size: 16px;
       }
       body {
         font-family: 'Open Sans', sans-serif;
-        background-color: rgb(246, 225, 252);
+        background-color: rgb(46, 47, 73);
+        color: rgb(255, 255, 255)
       }
+
+
+      .moreInfo {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding: 0rem 0rem 0rem 0rem;
+        height: 25vh;
+      }
+      @media screen and (max-width: 700px) {
+        .moreInfo {
+            flex-direction: column;
+            height: auto;
+        }
+      }
+      #tempValue{
+          background-color: rosybrown;
+        font-size:7rem;
+        width: 100%;
+        padding-left: 1.5rem;
+        padding-bottom: 1.5rem;
+        position: relative;
+
+      }
+
+      #localTime {
+        font-size:2rem;
+        width: 50%;
+        padding-top:4rem;
+        padding-left: 1.5rem;
+        padding-bottom: 1.5rem;
+        position: relative;
+        height: 25vh;
+        
+      
+    }
+    @media screen and (max-width: 700px) {
+        #localTime  {
+        width: 100%;
+      }
+    }
+    #hasPrecipitation {
+        font-size:2rem;
+        width: 25%;
+        padding-top:4rem;
+        padding-left: 1.5rem;
+        padding-bottom: 1.5rem;
+        position: relative;
+      
+    }
+    @media screen and (max-width: 700px) {
+        #hasPrecipitation  {
+        width: 100%;
+      }
+    }
+    #isDayTime {
+        font-size:2rem;
+        width: 25%;
+        padding-top:4rem;
+        padding-left: 1.5rem;
+        padding-bottom: 1.5rem;
+        position: relative;
+      
+    }
+    @media screen and (max-width: 700px) {
+        #isDayTime  {
+        width: 100%;
+      }
+    }
+
+    .line__1 {    
+        border-left: 1px solid rgb(255, 255, 255);       
+    }
+    .line__2 {
+        border-left: 1px solid rgb(255, 255, 255);
+        height: 25vh;
+    }
+
+    @media screen and (max-width: 700px) {
+        .line__1  {
+            visibility: hidden;
+        }
+        
+        .line__2 {
+          visibility: hidden;
+        }
+      }
+
+
+    button {
+        margin:0;
+    }
+
+        #myBtn {
+            background-color: rgb(46, 47, 73);
+            border:0px solid rgb(46, 47, 73)9;
+            color:rgb(255, 255, 255);
+            font-size:17px;
+            padding:16px 31px;
+
+        }
+        #myBtn:hover {
+            background-color: rgb(31, 32, 51);;
+        }
+
+
+
+        
+
+      
