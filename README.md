@@ -78,47 +78,34 @@ To see how to apply it you can follow the file.js in this repository, but basica
     }
     // call your function
     mySpecialRequest(specialUrl)
+    
+    async function getWeather(result){
+    console.log(result);
     </code></pre>
+    
+    
+**The getWheather() function is to access the result of the API. From console rou are going to be able to see the results of the API.
+To Acces a specific data you need to access it as an array: ex. <code> var_name = result[0].LocalObservationDateTime; </code>
 
-
-To develop this document, you can follow the steps provided below:
-1. create a fork of this project on Github
-2. ping the author of this repo via Github Issues to see if they are looking for contributions on the specific feature you're looking to add
-3. open the file in VS Code and make updates 
-4. add and commit those changes in your forked github repo
-5. make a pull request specifying what additions and changes were made
-6. have a nice chat and communication with me about those changes. 
-7. celebrate the contribution! 
+#### Now you are going to be able to use the API data in your site!
 
 <!-- Notes about the deployment -->
 ### Deployment
 
-This project is hosted on Github. Github renders markdown files.
+To be able to see the website you can go to [Glitch Website](https://glitch.com/edit/#!/themiscadiz-api-assignment?path=file.js:14:29)
+
+###Note:
+**To be able to see your own project on Glitch you need to change in the link to the api, <code>http://</code> to <code>https://</code>
 
 ## Built with
-
+* [Figma](https://www.figma.com/)
 * [VS Code](https://code.visualstudio.com/)
+* [Accu Weather APIs](https://developer.accuweather.com/)
 * [Github](https://github.com)
+* [Glitch](https://glitch.com/)
 
 ## Authors
-
-* [Joey Lee](https://jk-lee.com) -- adjunct professor -- [NYU ITP](https://itp.nyu.edu)
-* [Cassie Tarakajian](https://cassietarakajian.com/) -- adjunct professor -- [NYU ITP](https://itp.nyu.edu)
-
-## Code of Conduct
-
-Please read the [CODE OF CONDUCT](https://www.mozilla.org/en-US/about/governance/policies/participation/) 
-
-## License
-
-This is README template is licensed according to [Attribution 4.0 International (CC BY 4.0) ](https://creativecommons.org/licenses/by/4.0/)
-
-<!-- thank and reference all the things that made your project happen -->
-## Acknowledgements
-
-* [Creative Commons](https://creativecommons.org/licenses/by/4.0/) for their licensing documentation
-* [Openmoji project](https://www.openmoji.org/library/#search=notebook&emoji=1F4D4) for their glyphs
-* [PurpleBooth's Readme Template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+* [Themis Garcia](https://github.com/themiscadiz) -- NYU ITP student
 
 ***
 ***
