@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     let imperialValue;
     let tempValue;
     let weatherText;
+    let precipitationType;
 
     let changeTempBool = true; 
     let changeText = false;
@@ -62,7 +63,8 @@ window.addEventListener('DOMContentLoaded', async () => {
         isDayTime = result[0].IsDayTime;
         hasPrecipitation = result[0].HasPrecipitation;
         weatherText = result[0].WeatherText;
-
+        precipitationType = result[0].PrecipitationType;
+        
 
         let status = result[0].IsDayTime;
         console.log("estatus " + status);
@@ -76,10 +78,11 @@ window.addEventListener('DOMContentLoaded', async () => {
 
 
         if(hasPrecipitation == false){
-            hasPrecipitation = "0%"
+            hasPrecipitation = "0%"                  
         }
         else{
-            hasPrecipitation = result[0].HasPrecipitation
+            hasPrecipitation = result[0].HasPrecipitation;
+            precipitationType = result[0].PrecipitationType;
         }
 
         
@@ -116,9 +119,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     document.getElementById("weatherText").innerHTML = weatherText;
     document.getElementById("isDayTime").innerHTML = isDayTime;
     document.getElementById("hasPrecipitation").innerHTML = hasPrecipitation; 
-
-    console.log("estatus " + weatherText);
-
+    document.getElementById("precipitationType").innerHTML = precipitationType;
     }
 
 })

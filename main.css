@@ -124,6 +124,17 @@
         height: 5vh;
       }
     }
+
+    #precipitationType{
+        padding: 0rem 1.5rem 0rem 1.5rem;
+        font-size:1rem;
+        width: 25%;
+    }
+    @media screen and (max-width: 700px) {
+        #precipitationType  {
+            visibility: hidden;
+      }
+    }
     #isDayTime {
         font-size:2rem;
         width: 25%;
