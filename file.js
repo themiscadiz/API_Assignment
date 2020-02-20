@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     let metricValue;
     let imperialValue;
     let tempValue;
+    let weatherText;
 
     let changeTempBool = true; 
     let changeText = false;
@@ -60,11 +61,16 @@ window.addEventListener('DOMContentLoaded', async () => {
         metricValue = result[0].Temperature.Metric.Value;
         isDayTime = result[0].IsDayTime;
         hasPrecipitation = result[0].HasPrecipitation;
+        weatherText = result[0].WeatherText;
+
+
+        let status = result[0].IsDayTime;
+        console.log("estatus " + status);
 
         if(isDayTime){
             isDayTime = "It is day"
         }
-        else{
+        if(isDayTime==false){
             isDayTime = "It is night"
         }
 
@@ -107,9 +113,11 @@ window.addEventListener('DOMContentLoaded', async () => {
     });
     tempValue = imperialValue;
     document.getElementById("tempValue").innerHTML = tempValue;
-
+    document.getElementById("weatherText").innerHTML = weatherText;
     document.getElementById("isDayTime").innerHTML = isDayTime;
     document.getElementById("hasPrecipitation").innerHTML = hasPrecipitation; 
+
+    console.log("estatus " + weatherText);
 
     }
 

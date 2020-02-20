@@ -16,23 +16,20 @@
         background-color: rgb(46, 47, 73);
         color: rgb(255, 255, 255)
       }
-
-
-      .moreInfo {
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        padding: 0rem 0rem 0rem 0rem;
-        height: 25vh;
+      #localDate{
+        padding: 1.5rem;
       }
-      @media screen and (max-width: 700px) {
-        .moreInfo {
-            flex-direction: column;
-            height: auto;
-        }
+      h1 {
+          padding: 1.5rem;
       }
+      #weatherText{
+        background-color: rosybrown;
+        padding-top: 2rem;
+
+      }
+
       #tempValue{
-          background-color: rosybrown;
+        background-color: rosybrown;
         font-size:7rem;
         width: 100%;
         padding-left: 1.5rem;
@@ -41,7 +38,60 @@
 
       }
 
-      #localTime {
+
+
+      .moreInfo {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding: 0rem 0rem 0rem 0rem;
+        height: 15vh;
+      }
+
+      @media screen and (max-width: 700px) {
+        .moreInfo {
+            flex-direction: column;
+            height: auto;
+        }
+      }
+
+      #tagInfo{
+        padding: 1.5rem;
+        font-size:.75rem;
+        width: 100%;
+      }
+
+      #tagInfo1{
+        padding: 0rem 1.5rem 1.5rem 1.5rem;
+        font-size:.75rem;
+        width: 25%;
+      }
+      #tagInfo2{
+        padding: 0rem 1.5rem 1.5rem 1.5rem;
+        font-size:.75rem;
+        width: 50%;
+      }
+      #tagInfo3{
+        padding: 0rem 1.5rem 1.5rem 1.5rem;
+        font-size:.75rem;
+        width: 25%;
+      }
+      @media screen and (max-width: 700px) {
+        #tagInfo1{
+            visibility: hidden;
+        }
+        #tagInfo2{
+            visibility: hidden;
+        }
+        #tagInfo3{
+            visibility: hidden;
+        }
+        
+      }
+
+
+
+    #localTime {
         font-size:2rem;
         width: 50%;
         padding-top:4rem;
@@ -49,12 +99,13 @@
         padding-bottom: 1.5rem;
         position: relative;
         height: 25vh;
-        
-      
+           
     }
     @media screen and (max-width: 700px) {
         #localTime  {
         width: 100%;
+        padding: 0px;
+        height: 5vh;
       }
     }
     #hasPrecipitation {
@@ -69,6 +120,8 @@
     @media screen and (max-width: 700px) {
         #hasPrecipitation  {
         width: 100%;
+        padding: 0px;
+        height: 5vh;
       }
     }
     #isDayTime {
@@ -83,15 +136,18 @@
     @media screen and (max-width: 700px) {
         #isDayTime  {
         width: 100%;
+        padding: 0px;
+        height: 5vh;
       }
     }
 
     .line__1 {    
-        border-left: 1px solid rgb(255, 255, 255);       
+        border-left: 1px solid rgb(255, 255, 255); 
+        height:  25vh;      
     }
     .line__2 {
         border-left: 1px solid rgb(255, 255, 255);
-        height: 25vh;
+        height:  25vh;
     }
 
     @media screen and (max-width: 700px) {
@@ -107,18 +163,23 @@
 
     button {
         margin:0;
+        margin-bottom: 5rem;
     }
 
         #myBtn {
             background-color: rgb(46, 47, 73);
             border:0px solid rgb(46, 47, 73)9;
             color:rgb(255, 255, 255);
-            font-size:17px;
-            padding:16px 31px;
+            font-size:1rem;
+            padding:2rem 3rem;
 
         }
         #myBtn:hover {
             background-color: rgb(31, 32, 51);;
+        }
+
+        #quote{
+            padding: 3rem ;
         }
 
 
