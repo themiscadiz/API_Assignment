@@ -1,7 +1,5 @@
-# API_Assignment
- Accuweather API
 <!-- Every README should start with an H1 -->
-# The Good Project Readme Project
+# API_Assignment - Working with Accu Weather
 <!-- A one sentence description of the project or assignment -->
 This is a project is a Website using the  Accu Weather API for the current wheather conditions in New York.
 
@@ -94,7 +92,7 @@ To Acces a specific data you need to access it as an array: ex. <code> var_name 
 
 To be able to see the website you can go to [Glitch Website](https://glitch.com/edit/#!/themiscadiz-api-assignment?path=file.js:14:29)
 
-###Note:
+#### Note:
 **To be able to see your own project on Glitch you need to change in the link to the api, <code>http://</code> to <code>https://</code>
 
 ## Built with
@@ -114,17 +112,52 @@ To be able to see the website you can go to [Glitch Website](https://glitch.com/
 <!-- For your assignments you might consider  -->
 # Notes & Process
 
-<!-- How you built this project - Include images, gifs, and notes here -->
-## Process & Documentation
+## Sketching
+For this assignment I sketch a simple website were I can interacto with some of the conten t of the current weather api. Although this API provides little information I decided to use this one, undestan ding that accesing the API it was going to be a challenge. 
+For this sketch I design and interface where the user can click a button to change the value of the celsius or Fahrenheit. The same information was going to display in the same area. also the user would be able to see some API data such as Precipitation, Date, If is day or night and how are ythe conditions of the day (cloudy, sunny, etc.). 
+
+Imagen
+
+#### Accesing and API
+Using the developer site of accuweather was very accesible. 
+The most challenging part was to be able to see the data from console in my localhost. I iused the async function to access the results. However I spend a lot of time trying to figure it out how to acces each part of the result, because wasn't clear for me that I was looking an array. After I figure out that I was looking an array, a was able to access each part of the array.
+
+#### async function and fetch()
+I'm still not completly sure how tu use this fucntion and in what conditions makes sense to use it. however, to access the API data I create anothe async function to be able to manipulated. I understand that to be able to manipulate data from the API this has to happen in a async function.
+
+#### getElement
+I used get document.getElementById("localDate").innerHTML, when I want to use the data in the html file.
+
+#### API data to dynamically change the DOM - Interactive Button
+Creati ng the buttons was other of the most challenging parts opf this project. I wast sure how to make a button change a value from the file.js. the way that I manage this was using:
+In file.js
+<code>document.getElementById("myBtn").addEventListener("click", function changeTemp(){...}</code>
+the .addEventListener help me to open a communication with the html elemnts.
+
+In index.html
+<code><button><input type="button" id="myBtn" value="Celsius"></button></code>
+Using "value" in the html I was able to manipulate the results as a booloean statement.
+
+#### new Date();
+To get the local date a used a built-in function from js that gives you yout current time. I decided to use this functions instead the time that give the API because this one is updated each time that the user refresh the website. Instead the one in the API update as frequent as the API data update. Wich means that sometimes minutes pass and the time hasn't change.
+
+#### html and css
+The website has an responsive design where the information on a row of precipitation, time and day, change into a column. Because I have more dynamic things to go around in the code, I have more difficulties creating and styling the website.However at the end I became with a simple design approach to be able  concentrate in the js process. 
+
+<!-- How you built this project - Include images, gifs, and notes here ## Process & Documentation -->
+
 
 <!-- Any specific challenges or struggles documented -->
 ## Challenges & Struggles
+This project was very challenging being the first time that I attemp to use and API. The most challenging process were: 
+1. Creating an interactive button
+2. Accesing the API data
+3. Understanding how to use: .addEventListener | getElementById | async function | fetch
 
 <!-- Any questions you have -->
 ## Questions
+1. I am not sure if I had the best approach to create a dynamic button.
+2. How to add the degree symbol (°)? adding this to the information shows by the API.
 
 <!-- References for resources and inspiration -->
-## References
 
-* Author First Name, Author Last Name. [Link]()
-* Author First Name, Author Last Name. [Link]()
