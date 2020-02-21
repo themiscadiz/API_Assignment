@@ -50,12 +50,19 @@ window.addEventListener('DOMContentLoaded', async () => {
             localTime= new Date();
             let hours = localTime.getHours();
             let minutes = localTime.getMinutes();
+            let am = " am";
+            let pm = " pm";
 
-            let timeString = "" + ((hours > 12) ? hours - 12 : hours);
-            timeString  += ((minutes < 10) ? ":0" : ":") + minutes;
-            timeString  += (hours >= 12) ? " P.M." : " A.M.";
+            let showTime = "" + hours;
+            showTime  += ":"+ minutes;
+            if(hours >= 12){
+                showTime  += pm;
+            }
+            else{
+             showTime  += am;
+            }
             
-            document.getElementById("localTime").innerHTML = timeString;
+            document.getElementById("localTime").innerHTML = showTime;
         }
 
         imperialValue = result[0].Temperature.Imperial.Value;
