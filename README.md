@@ -187,4 +187,8 @@ This project was very challenging being the first time that I attempted to use a
 2. How to add the degree symbol (°)? adding this to the information returned by the API.
 
 <!-- References for resources and inspiration -->
+## References
+[newDate()](https://www.w3schools.com/js/js_dates.asp)
+[newDate() - Time](http://www.java2s.com/Code/JavaScript/Development/Getthecurrenttimeandthenextractthehoursminutesandseconds.htm)
+
 
