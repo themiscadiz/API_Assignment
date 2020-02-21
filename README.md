@@ -150,8 +150,8 @@ I used document.getElementById("localDate").innerHTML when I want to use the dat
 
 ### API data to dynamically change the DOM - Interactive Button
 Creating the buttons was the other challenging part of this project. I wasn't sure how to make a button change a value from the file.js. 
+
 ![img](https://github.com/themiscadiz/API_Assignment/blob/master/Images%20for%20Doc%20week%203/2.gif)
-![img](https://github.com/themiscadiz/API_Assignment/blob/master/Images%20for%20Doc%20week%203/1.gif)
 
 I managed this was using:
 
@@ -173,7 +173,6 @@ To get the local date a used a built-in function from js that gives you yout cur
 The website has an responsive design where the information of precipitation, time and day, changes from a row into a column. Because I have more dynamic things to go around in the code, I had more difficulties creating and styling the website. However at the end I decided with a simple design approach to be able focus on the functionality. 
 
 <!-- How you built this project - Include images, gifs, and notes here ## Process & Documentation -->
-
 
 <!-- Any specific challenges or struggles documented -->
 ## Challenges & Struggles
