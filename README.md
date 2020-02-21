@@ -163,8 +163,8 @@ In index.html
 <code><button><input type="button" id="myBtn" value="Celsius"></button></code>
 Using "value" in the html I was able to manipulate the results as a booloean statement.
 
+![img](https://github.com/themiscadiz/API_Assignment/blob/master/Images%20for%20Doc%20week%203/8.jpg)
 
-![img](https://github.com/themiscadiz/API_Assignment/blob/master/Images%20for%20Doc%20week%203/8.png)
 
 ### new Date();
 To get the local date a used a built-in function from js that gives you yout current time. I decided to use this function instead the time from the API because this one is updated each time that the user refresh the website. Instead the one in the API update as frequent as the API data update. Wich means that sometimes minutes pass and the time hasn't changed.
