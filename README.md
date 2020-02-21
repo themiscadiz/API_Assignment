@@ -111,7 +111,7 @@ To Acces specific data you need to access it as an array: Ex. <code> var_name = 
 To be able to see the website you can go to [Glitch Website](https://glitch.com/edit/#!/themiscadiz-api-assignment?path=file.js:14:29)
 
 ### Note for deployment on Glitch:
-**To be able to see your own project on Glitch you need to change in the link to the api, <code>http://</code> to <code>https://</code>
+**To be able to see your own project on Glitch you need to change in the link to the api,** <code>http://</code> to <code>https://</code>
 
 ## Built with
 * [Figma](https://www.figma.com/)
