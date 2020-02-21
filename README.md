@@ -51,12 +51,12 @@ Is this Worldwide or Country specific use? * In this case: Country, US
 4. You can see your API Key from My Apps page in developer.accuweather site.
 5. From the API Reference click on:Current Conditions API
 6. Click on Current Conditions
-7. In Resource URL change the las value numbers of the link, for the unique ID of the city that you want to know the current location. Nwe York "Key": "349727"
+7. In Resource URL change the las value numbers of the link, for the unique ID of the city that you want to know the current location. New York "Key": "349727"
 8. Click **Send this Request** button
 
-**In the Response section you are going to see what type of data the current Api give you**
+**In the Response section you are going to see what type of data the Api gives you**
 
-9. In the cURL section you are going to see a link, that you can copy paste into your code.
+9. In the cURL section you are going to see a link that you can copy paste into your code.
 
 Save the link into a variable inside file.js. 
 
@@ -82,8 +82,8 @@ To see how to apply it you can follow the file.js in this repository, but basica
     </code></pre>
     
     
-**The getWheather() function is to access the result of the API. From console rou are going to be able to see the results of the API.
-To Acces a specific data you need to access it as an array: ex. <code> var_name = result[0].LocalObservationDateTime; </code>
+**The getWheather() function is to access the result of the API. From console you are going to be able to see the results from the API call.
+To Acces specific data you need to access it as an array: ex. <code> var_name = result[0].LocalObservationDateTime; </code>
 
 #### Now you are going to be able to use the API data in your site!
 
@@ -113,23 +113,24 @@ To be able to see the website you can go to [Glitch Website](https://glitch.com/
 # Notes & Process
 
 ## Sketching
-For this assignment I sketch a simple website were I can interacto with some of the conten t of the current weather api. Although this API provides little information I decided to use this one, undestan ding that accesing the API it was going to be a challenge. 
-For this sketch I design and interface where the user can click a button to change the value of the celsius or Fahrenheit. The same information was going to display in the same area. also the user would be able to see some API data such as Precipitation, Date, If is day or night and how are ythe conditions of the day (cloudy, sunny, etc.). 
+For this assignment I sketch a simple website were I can interact with some of the content of the Current Weather api. Although this API provides little information I decided to use this one, undestanding that accesing the API it was going to be a challenge. 
+For this sketch I designed an interface where the user can click a button to change the value from the Celsius to Fahrenheit. The information is displayed in the same area. The user is also able to see sother data such as Precipitation, Date, day or night, and how are the conditions of the day (cloudy, sunny, etc.). 
 
 Imagen
 
 #### Accesing and API
 Using the developer site of accuweather was very accesible. 
-The most challenging part was to be able to see the data from console in my localhost. I iused the async function to access the results. However I spend a lot of time trying to figure it out how to acces each part of the result, because wasn't clear for me that I was looking an array. After I figure out that I was looking an array, a was able to access each part of the array.
+The most challenging part was to be able to see the data from console in my localhost. I used the async function to access the results. However, I spent a lot of time trying to figure it out how to acces each part of the result, because it wasn't clear to me that I was getting an array. After that, I was able to access each part of the array.
 
 #### async function and fetch()
-I'm still not completly sure how tu use this fucntion and in what conditions makes sense to use it. however, to access the API data I create anothe async function to be able to manipulated. I understand that to be able to manipulate data from the API this has to happen in a async function.
+I'm still not completly sure how tu use this function and in what conditions makes sense to use it. However, to access the API data, I created another async function to be able to manipulate it. I think that to be able to manipulate data from the API this has to happen in a async function.
 
 #### getElement
-I used get document.getElementById("localDate").innerHTML, when I want to use the data in the html file.
+I used document.getElementById("localDate").innerHTML when I want to use the data in the html file.
 
 #### API data to dynamically change the DOM - Interactive Button
-Creati ng the buttons was other of the most challenging parts opf this project. I wast sure how to make a button change a value from the file.js. the way that I manage this was using:
+Creating the buttons was the other challenging part of this project. I wasn't sure how to make a button change a value from the file.js. I managed this was using:
+
 In file.js
 <code>document.getElementById("myBtn").addEventListener("click", function changeTemp(){...}</code>
 the .addEventListener help me to open a communication with the html elemnts.
@@ -139,17 +140,17 @@ In index.html
 Using "value" in the html I was able to manipulate the results as a booloean statement.
 
 #### new Date();
-To get the local date a used a built-in function from js that gives you yout current time. I decided to use this functions instead the time that give the API because this one is updated each time that the user refresh the website. Instead the one in the API update as frequent as the API data update. Wich means that sometimes minutes pass and the time hasn't change.
+To get the local date a used a built-in function from js that gives you yout current time. I decided to use this function instead the time from the API because this one is updated each time that the user refresh the website. Instead the one in the API update as frequent as the API data update. Wich means that sometimes minutes pass and the time hasn't changed.
 
 #### html and css
-The website has an responsive design where the information on a row of precipitation, time and day, change into a column. Because I have more dynamic things to go around in the code, I have more difficulties creating and styling the website.However at the end I became with a simple design approach to be able  concentrate in the js process. 
+The website has an responsive design where the information of precipitation, time and day, changes from a row into a column. Because I have more dynamic things to go around in the code, I had more difficulties creating and styling the website. However at the end I decided with a simple design approach to be able focus on the functionality. 
 
 <!-- How you built this project - Include images, gifs, and notes here ## Process & Documentation -->
 
 
 <!-- Any specific challenges or struggles documented -->
 ## Challenges & Struggles
-This project was very challenging being the first time that I attemp to use and API. The most challenging process were: 
+This project was very challenging being the first time that I attempted to use an API. The most challenging processes were: 
 1. Creating an interactive button
 2. Accesing the API data
 3. Understanding how to use: .addEventListener | getElementById | async function | fetch
@@ -157,7 +158,7 @@ This project was very challenging being the first time that I attemp to use and 
 <!-- Any questions you have -->
 ## Questions
 1. I am not sure if I had the best approach to create a dynamic button.
-2. How to add the degree symbol (°)? adding this to the information shows by the API.
+2. How to add the degree symbol (°)? adding this to the information returned by the API.
 
 <!-- References for resources and inspiration -->
 
