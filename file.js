@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     let changeTempBool = true; 
     let changeText = false;
     
-    const specialUrl = "http://dataservice.accuweather.com/currentconditions/v1/349727?apikey=1NBU31pTPFmA4C7EgJhGvCZL1gRfx6ut"
+    const specialUrl = "https://dataservice.accuweather.com/currentconditions/v1/349727?apikey=1NBU31pTPFmA4C7EgJhGvCZL1gRfx6ut"
     // define a custom function to wrap your await
     async function mySpecialRequest(url){
     try{
