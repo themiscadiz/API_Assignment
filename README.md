@@ -3,7 +3,7 @@
 <!-- A one sentence description of the project or assignment -->
 This is a project is a Website using the  Accu Weather API for the current wheather conditions in New York.
 
-<!--![Logo](https://www.openmoji.org/data/color/svg/1F4D4.svg)-->
+![img1](https://github.com/themiscadiz/API_Assignment/blob/master/Images%20for%20Doc%20week%203/0.png?raw=true)
 
 <!-- It is good practice to add an about or summary -->
 
@@ -38,25 +38,35 @@ Notes: There a other ways to open a localhost. This is just my prefered method, 
 ### Develop
 Accu Weather Account
 After create a Accu weather account:
-1. Go to **My Apps
-2. Click **Add New App Button
+1. Go to **My Apps**
+![img7](https://github.com/themiscadiz/API_Assignment/blob/master/Images%20for%20Doc%20week%203/7.png?raw=true)
+
+2. Click **Add New App Button**
+
 3. In the Add App section choose:
 -App Name *
 -Where will the API be used? *Desktop Website
 What will you be creating with this API? * Weather App
 -What programming language is your APP written in? *Java Script
 Is this Worldwide or Country specific use? * In this case: Country, US
--Click **Create App
+-Click **Create App**
 
 4. You can see your API Key from My Apps page in developer.accuweather site.
+
 5. From the API Reference click on:Current Conditions API
+![img](https://github.com/themiscadiz/API_Assignment/blob/master/Images%20for%20Doc%20week%203/6.png)
+
 6. Click on Current Conditions
+
 7. In Resource URL change the las value numbers of the link, for the unique ID of the city that you want to know the current location. New York "Key": "349727"
+![img](https://github.com/themiscadiz/API_Assignment/blob/master/Images%20for%20Doc%20week%203/5.png)
+
 8. Click **Send this Request** button
 
 **In the Response section you are going to see what type of data the Api gives you**
 
 9. In the cURL section you are going to see a link that you can copy paste into your code.
+![img](https://github.com/themiscadiz/API_Assignment/blob/master/Images%20for%20Doc%20week%203/4.png)
 
 Save the link into a variable inside file.js. 
 
@@ -83,7 +93,10 @@ To see how to apply it you can follow the file.js in this repository, but basica
     
     
 **The getWheather() function is to access the result of the API. From console you are going to be able to see the results from the API call.
-To Acces specific data you need to access it as an array: ex. <code> var_name = result[0].LocalObservationDateTime; </code>
+
+![img](https://github.com/themiscadiz/API_Assignment/blob/master/Images%20for%20Doc%20week%203/3.png)
+
+To Acces specific data you need to access it as an array: Ex. <code> var_name = result[0].LocalObservationDateTime; </code>
 
 #### Now you are going to be able to use the API data in your site!
 
@@ -116,7 +129,9 @@ To be able to see the website you can go to [Glitch Website](https://glitch.com/
 For this assignment I sketch a simple website were I can interact with some of the content of the Current Weather api. Although this API provides little information I decided to use this one, undestanding that accesing the API it was going to be a challenge. 
 For this sketch I designed an interface where the user can click a button to change the value from the Celsius to Fahrenheit. The information is displayed in the same area. The user is also able to see sother data such as Precipitation, Date, day or night, and how are the conditions of the day (cloudy, sunny, etc.). 
 
-Imagen
+![img](https://github.com/themiscadiz/API_Assignment/blob/master/Images%20for%20Doc%20week%203/2.png)
+![img](https://github.com/themiscadiz/API_Assignment/blob/master/Images%20for%20Doc%20week%203/1.png)
+
 
 #### Accesing and API
 Using the developer site of accuweather was very accesible. 
